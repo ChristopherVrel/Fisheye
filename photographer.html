@@ -1,37 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <meta charset="utf-8">
-    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="./assets/css/style.css" rel="stylesheet" type="text/css">
+    <link href="./assets/css/photographer.css" rel="stylesheet" type="text/css">
+    
+    <link href="./assets/img/favicon.png" rel="icon" type="image/png">
     <link href="https://fonts.googleapis.com/css?family=DM+Sans&display=swap" rel="stylesheet">
-    <title>Fisheye - photographe </title>
+
+    <script src="https://kit.fontawesome.com/5b3e858bca.js" crossorigin="anonymous"></script>
+    
+    <title>Fisheye - Photographe </title>
   </head>
   <body>
     <header>
-      <img src="assets/images/logo.png" class="logo" />
+        <nav>
+            <a href="/">
+                <img src="./assets/img/logo.png" class="logo" alt="Fisheye Home page" />
+            </a>
+        </nav>
     </header>
     <main id="main">
-      <div class="photograph-header">
-        <button class="contact_button" onclick="displayModal()">Contactez-moi</button>
-      </div>
+        <div class="photograph-header">
+            <div class="photograh-informations"></div>
+            <button class="contact_button">Contactez-moi</button>
+            <div class="photograph-image"></div>
+        </div>
+        <div class="filter-bar">
+            <p>Trier par</p>
+            <div class="filter-container">
+                <div class="filter-active">
+                    <div>Popularité</div>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="filter-options">
+                    <div class="filter-selected">Popularité</div>
+                    <div>Date</div>
+                    <div>Titre</div>
+                </div>
+            </div>
+        </div>
+        <div class="photograph-medias"></div>
     </main>
     <div id="contact_modal">
-			<div class="modal">
-				<header>
-          <h2>Contactez-moi</h2>
-          <img src="assets/icons/close.svg" onclick="closeModal()" />
-        </header>
-				<form>
-					<div>
-						<label>Prénom</label>
-						<input />
-					</div>
-          <button class="contact_button">Envoyer</button>
-				</form>
-			</div>
-		</div>
-    <script src="/scripts/pages/photographer.js"></script>
-    <script src="/scripts/utils/contactForm.js"></script>
+        <div class="modal">
+            <header>
+                <div>
+                    <h1 id="modal-title">Contactez-moi</h1>
+                    <img src="./assets/img/icons/close.svg" />
+                </div>
+            </header>
+            <form>
+                <div>
+                    <label for="fname">Prénom</label>
+                    <input type="text" id="fname" name="fname">
+                </div>
+                <div>
+                    <label for="lname">Nom</label>
+                    <input type="text" id="lname" name="lname">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="message">Votre message</label>
+                    <textarea rows="20" id="message" name="message"></textarea>
+                </div>
+                <button class="contact_button" type="submit">Envoyer</button>
+            </form>
+        </div>
+    </div>
+    <div id="lightbox">
+        <div class="lightbox-content">
+            <div id="previous">
+                <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div id="content"></div>
+            <div id="next">
+                <div class="close-container">
+                    <svg  width="42" height="42" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M42 4.23L37.77 0L21 16.77L4.23 0L0 4.23L16.77 21L0 37.77L4.23 42L21 25.23L37.77 42L42 37.77L25.23 21L42 4.23Z"/>
+                    </svg>
+                </div>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/pages/photographer.js" type="module"></script>
   </body>
 </html>

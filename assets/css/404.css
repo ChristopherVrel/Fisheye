@@ -1,0 +1,36 @@
+body {
+    min-height: 100vh;
+    height: 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1 {
+    color: var(--secondary-color);
+    font-size: 10rem;
+    line-height: 8rem;
+    margin: 0;
+}
+
+main h2 {
+    color: var(--heavy-grey-color);
+}
+
+main button {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--white-color);
+    padding: 1rem;
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
