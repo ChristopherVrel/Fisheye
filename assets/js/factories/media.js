@@ -22,6 +22,7 @@ function mediaFactory(data) {
         else {
             const img = document.createElement("img");
             img.src = assetMediumPath;
+            img.alt = title;
 
             header.appendChild(img);
         }

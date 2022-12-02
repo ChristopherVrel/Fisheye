@@ -130,7 +130,7 @@ async function init() {
         displayPhotographgStats(photographerModel, totalLikesCount);
     }).catch((error) => {
         console.log(`[rejected]: ${error.message}`);
-        window.location.replace(`${window.location.origin}/404.html`);
+        window.location.replace(`${window.location.origin}Fisheye/404.html`);
     });
 }
 

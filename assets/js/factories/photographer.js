@@ -19,8 +19,9 @@ function photographerFactory(data) {
 
         const lowimg = document.createElement("img");
         lowimg.setAttribute("src", lowPicture);
+        lowimg.alt = name;
         
-        const img = document.createElement("img");            
+        const img = document.createElement("img");
         img.onload = function () {
             lowimg.src = this.src;
         };
