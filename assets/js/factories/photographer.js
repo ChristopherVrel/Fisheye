@@ -63,15 +63,15 @@ function photographerFactory(data) {
         h1.innerText = name;
         divContainer.appendChild(h1);
 
-        const h3 = document.createElement("h3");
-        h3.innerText = `${city}, ${country}`;
-        divContainer.appendChild(h3);
+        const h2 = document.createElement("h2");
+        h2.innerText = `${city}, ${country}`;
+        divContainer.appendChild(h2);
 
         const p = document.createElement("p");
         p.innerText = tagline;
         divContainer.appendChild(p);
 
-        return { h1, h3, p };
+        return { h1, h2, p };
     }
 
     function getUserBannerPictureDOM() {
