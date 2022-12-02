@@ -77,6 +77,7 @@ function photographerFactory(data) {
     function getUserBannerPictureDOM() {
         const lowimg = document.createElement("img");
         lowimg.setAttribute("src", lowPicture);
+        lowimg.alt = name;
 
         const img = document.createElement("img");   
 
