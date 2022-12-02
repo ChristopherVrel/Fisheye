@@ -171,14 +171,14 @@
     width: 100%;
 }
 
-#lightbox .lightbox-content #previous i, #lightbox .lightbox-content #next i {
+#lightbox .lightbox-content #previous span, #lightbox .lightbox-content #next span {
     color: var(--primary-color);
     font-size: 3.5rem;
     padding: .65rem;
     border-radius: .5rem;
 }
 
-#lightbox .lightbox-content #previous i:hover, #lightbox .lightbox-content #next i:hover {
+#lightbox .lightbox-content #previous span:hover, #lightbox .lightbox-content #next span:hover {
     background-color: var(--primary-color);
     color: var(--white-color);
 }
