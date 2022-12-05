@@ -126,7 +126,7 @@ async function init() {
 
         displayBanner(photographerModel);
 
-        displayFilterBar(medias, photographerModel);
+        displayFilterBar(medias);
 
         // sort data by default popularity
         medias = [...medias].sort((a, b) => b.likes - a.likes);

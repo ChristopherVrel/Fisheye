@@ -1,6 +1,6 @@
 import { displayData } from "../pages/photographer.js";
 
-async function displayFilterBar(medias, photographerModel) {
+async function displayFilterBar(medias) {
     const filterBarContainer = document.querySelector(".filter-bar .filter-container");
     const filterActive = filterBarContainer.querySelector(".filter-active");
     const filterOptions = filterBarContainer.querySelectorAll(".filter-options div");
@@ -35,7 +35,7 @@ async function displayFilterBar(medias, photographerModel) {
                         break;
                 }
 
-                displayData(medias, photographerModel);
+                displayData(medias);
             }
 
             filterBarContainer.classList.remove("filter-opened");
