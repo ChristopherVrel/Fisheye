@@ -98,6 +98,10 @@ function displayLightbox(allMedias, currentIndex) {
 
         const lightboxContainer = document.getElementById("lightbox");
 
+        const main = document.getElementById("main");
+        main.setAttribute("aria-hidden", false);
+        main.style.display = "block";
+
         document.body.style.overflow = "";
 
         lightboxContainer.classList.remove("open");
@@ -121,6 +125,10 @@ function displayLightbox(allMedias, currentIndex) {
 // open lightbox
 function openLightbox() {
     const lightboxContainer = document.getElementById("lightbox");
+
+    const main = document.getElementById("main");
+    main.setAttribute("aria-hidden", true);
+    main.style.display = "none";
 
     document.body.style.overflow = "hidden";
 

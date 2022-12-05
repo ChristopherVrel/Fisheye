@@ -382,82 +382,6 @@
     margin: 0;
 }
 
-@media screen and (max-width: 992px) {
-    .modal {
-        width: 75%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .photograph-header {
-        flex-direction: column;
-        text-align: center;
-        gap: 1rem;
-        padding: 2rem;
-        height: unset;
-    }
-
-    .photograph-header .photograph-image {
-        order: 1;
-    }
-
-    .photograph-header .photograh-informations {
-        order: 2;
-    }
-
-    .photograph-header .contact_button {
-        order: 3;
-    }
-
-    .photograph-medias {
-        column-gap: 2rem;
-    }
-
-    .photograph-medias article {
-        flex: 0 0 calc((50% - 2rem) + (2rem / 2));
-    }
-
-    .photograph-stats {
-        transform: translateX(50%);
-        right: 50%;
-    }
-
-    .modal header h1 {
-        font-size: 3rem;
-    }
-
-    .modal header img {
-        margin-top: 0.75rem;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .photograph-medias article {
-        flex: 0 0 100%;
-    }
-
-    .modal {
-        width: 100%;
-        padding: 1.5rem;
-    }
-
-    .modal header h1 {
-        font-size: 2rem;
-    }
-
-    .modal header img {
-        margin-top: .55rem;
-        width: 2rem;
-    }
-
-    .modal form label {
-        font-size: 1.5rem !important;
-    }
-
-    .modal form input, .modal form .contact_button {
-        height: 3rem !important;
-    }
-}
 
 .filter-bar {
     margin-bottom: 2rem;
@@ -543,4 +467,85 @@
     width: 170px;
     height: 70px;
     background-color: var(--primary-color);
+}
+
+@media screen and (max-width: 992px) {
+    .modal {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .photograph-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        padding: 2rem;
+        height: unset;
+    }
+
+    .photograph-header .photograph-image {
+        order: 1;
+    }
+
+    .photograph-header .photograh-informations {
+        order: 2;
+    }
+
+    .photograph-header .contact_button {
+        order: 3;
+    }
+
+    .photograph-medias {
+        column-gap: 2rem;
+    }
+
+    .photograph-medias article {
+        flex: 0 0 calc((50% - 2rem) + (2rem / 2));
+    }
+
+    .photograph-stats {
+        transform: translateX(50%);
+        right: 50%;
+    }
+
+    .modal header h1 {
+        font-size: 3rem;
+    }
+
+    .modal header img {
+        margin-top: 0.75rem;
+    }
+
+    #lightbox .lightbox-content {
+        margin: 1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .photograph-medias article {
+        flex: 0 0 100%;
+    }
+
+    .modal {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .modal header h1 {
+        font-size: 2rem;
+    }
+
+    .modal header img {
+        margin-top: .55rem;
+        width: 2rem;
+    }
+
+    .modal form label {
+        font-size: 1.5rem !important;
+    }
+
+    .modal form input, .modal form .contact_button {
+        height: 3rem !important;
+    }
 }

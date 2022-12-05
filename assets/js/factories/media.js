@@ -6,7 +6,10 @@ function mediaFactory(data) {
     
     function getMediaCardDOM() {
         const article = document.createElement("article");
+        article.setAttribute("tabindex", 0);
+
         const header = document.createElement("header");
+        header.setAttribute("tabindex", 0);
         article.appendChild(header);
 
         if (isVideo) {

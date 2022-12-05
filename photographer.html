@@ -21,15 +21,15 @@
   <body>
     <header>
         <nav>
-            <a href="/Fisheye/">
+            <a href="/Fisheye/" aria-label="Retour home">
                 <img src="./assets/img/logo.png" class="logo" alt="Fisheye Home page" />
             </a>
         </nav>
     </header>
-    <main id="main">
+    <main id="main" aria-hidden="false">
         <div class="photograph-header">
             <div class="photograh-informations"></div>
-            <button class="contact_button">Contactez-moi</button>
+            <button class="contact_button" role="button" aria-label="Ouvre le formulaire de contact">Contactez-moi</button>
             <div class="photograph-image"></div>
         </div>
         <div class="filter-bar">
@@ -48,7 +48,7 @@
         </div>
         <div class="photograph-medias"></div>
     </main>
-    <div id="contact_modal">
+    <div id="contact_modal" role="dialog" aria-label="Formulaire de contact" aria-hidden="true" aria-modal="true">
         <div class="modal">
             <header>
                 <div>
@@ -77,19 +77,19 @@
             </form>
         </div>
     </div>
-    <div id="lightbox">
+    <div id="lightbox" role="dialog" aria-label="Photo ligthbox" aria-hidden="true">
         <div class="lightbox-content">
             <div id="previous">
-                <span class="fa-solid fa-chevron-left"></span>
+                <span class="fa-solid fa-chevron-left" aria-label="Photo précédente" role="button"></span>
             </div>
             <div id="content"></div>
             <div id="next">
-                <div class="close-container">
+                <div class="close-container" aria-label="Fermer la lightbox" role="button">
                     <svg  width="42" height="42" viewBox="0 0 42 42" xmlns="http://www.w3.org/2000/svg">
                         <path d="M42 4.23L37.77 0L21 16.77L4.23 0L0 4.23L16.77 21L0 37.77L4.23 42L21 25.23L37.77 42L42 37.77L25.23 21L42 4.23Z"/>
                     </svg>
                 </div>
-                <span class="fa-solid fa-chevron-right"></span>
+                <span class="fa-solid fa-chevron-right" aria-label="Photo suivante" role="button"></span>
             </div>
         </div>
     </div>

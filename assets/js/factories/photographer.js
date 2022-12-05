@@ -8,10 +8,12 @@ function photographerFactory(data) {
         article.classList.add("article");
         
         const header = document.createElement("header");
+        header.setAttribute("aria-label", name);
         article.appendChild(header);
 
         const link = document.createElement("a");
         link.setAttribute("href", `${window.location.href}photographer.html?id=${id}`);
+        link.setAttribute("aria-label", "Voir les travaux du photographe");
         header.appendChild(link);
 
         const imgContainer = document.createElement("div");

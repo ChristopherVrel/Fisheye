@@ -40,6 +40,12 @@ async function displayData(medias) {
             displayLightbox(allmedias, index);
         });
 
+        mediaCardDOM.querySelector("header").addEventListener("keydown", (e) => {
+            if (e.key === "Enter") {
+                displayLightbox(allmedias, index);
+            }
+        });
+
         mediaCardDOM.querySelector("footer .likes").addEventListener("click", (e) => {
             updatePhotographStats(e, media);
         });
@@ -130,7 +136,7 @@ async function init() {
         displayPhotographgStats(photographerModel, totalLikesCount);
     }).catch((error) => {
         console.log(`[rejected]: ${error.message}`);
-        window.location.replace(`${window.location.origin}Fisheye/404.html`);
+        window.location.replace(`${window.location.origin}/Fisheye/404.html`);
     });
 }
 
